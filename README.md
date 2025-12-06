@@ -1,6 +1,29 @@
 # Findash - Financial Dashboard in Databricks
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Databricks](https://img.shields.io/badge/Databricks-Compatible-orange)](https://databricks.com/)
+[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
+[![PySpark](https://img.shields.io/badge/PySpark-3.0+-red.svg)](https://spark.apache.org/)
+
 A comprehensive financial dashboard built for Databricks that provides data transformations and visualizations for financial analysis.
+
+## 📑 Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Using Your Own Data](#using-your-own-data)
+- [Notebook Structure](#notebook-structure)
+- [Visualizations](#visualizations)
+- [Advanced Features](#advanced-features)
+- [Customization](#customization)
+- [Best Practices](#best-practices)
+- [Troubleshooting](#troubleshooting)
+- [Documentation](#documentation)
+- [Contributing](#contributing)
+- [License](#license)
+- [Support](#support)
+- [Resources](#resources)
 
 ## Overview
 
@@ -157,6 +180,22 @@ Add custom calculations in the transformation sections using PySpark SQL functio
 
 **Issue**: "Visualization not displaying"
 - **Solution**: Ensure `display()` function is used and data is in the correct format
+
+## Documentation
+
+This project includes comprehensive documentation:
+
+| Document | Description | Lines |
+|----------|-------------|-------|
+| [README.md](README.md) | Project overview and quick start | 200+ |
+| [SETUP_GUIDE.md](SETUP_GUIDE.md) | Detailed installation and setup | 160+ |
+| [METRICS_GUIDE.md](METRICS_GUIDE.md) | Financial metrics explained | 330+ |
+| [EXAMPLES.md](EXAMPLES.md) | 10 real-world use cases | 400+ |
+| [QUICK_REFERENCE.md](QUICK_REFERENCE.md) | Quick command reference | 245+ |
+| [PROJECT_STRUCTURE.md](PROJECT_STRUCTURE.md) | Architecture details | 330+ |
+| [IMPLEMENTATION_SUMMARY.md](IMPLEMENTATION_SUMMARY.md) | Complete project summary | 340+ |
+
+**Total Documentation**: 2,000+ lines covering all aspects of the project.
 
 ## Contributing
 
