@@ -1,0 +1,61 @@
+date,category,type,amount
+2023-01-01,Product Sales,Revenue,45000.00
+2023-01-01,Service Revenue,Revenue,32000.00
+2023-01-01,Consulting,Revenue,28000.00
+2023-01-01,Subscriptions,Revenue,15000.00
+2023-01-01,Salaries,Expense,12000.00
+2023-01-01,Marketing,Expense,8500.00
+2023-01-01,Office Rent,Expense,5000.00
+2023-01-01,Utilities,Expense,1200.00
+2023-01-01,Software,Expense,3500.00
+2023-01-01,Travel,Expense,2800.00
+2023-02-01,Product Sales,Revenue,48000.00
+2023-02-01,Service Revenue,Revenue,35000.00
+2023-02-01,Consulting,Revenue,30000.00
+2023-02-01,Subscriptions,Revenue,16000.00
+2023-02-01,Salaries,Expense,12000.00
+2023-02-01,Marketing,Expense,9000.00
+2023-02-01,Office Rent,Expense,5000.00
+2023-02-01,Utilities,Expense,1100.00
+2023-02-01,Software,Expense,3500.00
+2023-02-01,Travel,Expense,3200.00
+2023-03-01,Product Sales,Revenue,52000.00
+2023-03-01,Service Revenue,Revenue,38000.00
+2023-03-01,Consulting,Revenue,33000.00
+2023-03-01,Subscriptions,Revenue,17000.00
+2023-03-01,Salaries,Expense,12500.00
+2023-03-01,Marketing,Expense,10000.00
+2023-03-01,Office Rent,Expense,5000.00
+2023-03-01,Utilities,Expense,1300.00
+2023-03-01,Software,Expense,3500.00
+2023-03-01,Travel,Expense,3500.00
+2023-04-01,Product Sales,Revenue,50000.00
+2023-04-01,Service Revenue,Revenue,36000.00
+2023-04-01,Consulting,Revenue,31000.00
+2023-04-01,Subscriptions,Revenue,17500.00
+2023-04-01,Salaries,Expense,12500.00
+2023-04-01,Marketing,Expense,9500.00
+2023-04-01,Office Rent,Expense,5000.00
+2023-04-01,Utilities,Expense,1150.00
+2023-04-01,Software,Expense,3500.00
+2023-04-01,Travel,Expense,2900.00
+2023-05-01,Product Sales,Revenue,55000.00
+2023-05-01,Service Revenue,Revenue,40000.00
+2023-05-01,Consulting,Revenue,35000.00
+2023-05-01,Subscriptions,Revenue,18000.00
+2023-05-01,Salaries,Expense,13000.00
+2023-05-01,Marketing,Expense,11000.00
+2023-05-01,Office Rent,Expense,5000.00
+2023-05-01,Utilities,Expense,1400.00
+2023-05-01,Software,Expense,4000.00
+2023-05-01,Travel,Expense,4000.00
+2023-06-01,Product Sales,Revenue,53000.00
+2023-06-01,Service Revenue,Revenue,39000.00
+2023-06-01,Consulting,Revenue,34000.00
+2023-06-01,Subscriptions,Revenue,18500.00
+2023-06-01,Salaries,Expense,13000.00
+2023-06-01,Marketing,Expense,10500.00
+2023-06-01,Office Rent,Expense,5000.00
+2023-06-01,Utilities,Expense,1500.00
+2023-06-01,Software,Expense,4000.00
+2023-06-01,Travel,Expense,3800.00

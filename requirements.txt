@@ -1,0 +1,14 @@
+# Requirements for running the Financial Dashboard
+# Note: These are automatically available in Databricks runtime
+
+# Core dependencies (pre-installed in Databricks)
+pyspark>=3.0.0
+pandas>=1.0.0
+numpy>=1.18.0
+
+# Visualization (built-in to Databricks)
+# matplotlib>=3.0.0
+# seaborn>=0.10.0
+
+# For local development/testing only (not required in Databricks)
+# databricks-connect>=9.0.0
