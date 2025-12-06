@@ -37,7 +37,24 @@ spark = SparkSession.builder.getOrCreate()
 
 # Generate sample financial data
 def generate_financial_data():
-    """Generate sample financial transactions for demonstration"""
+    """Generate sample financial transactions for demonstration
+    
+    Returns:
+        list: List of dictionaries containing financial transactions with keys:
+            - date: datetime - Transaction date
+            - category: str - Transaction category
+            - type: str - 'Revenue' or 'Expense'
+            - amount: float - Transaction amount (positive value)
+    
+    Note:
+        Generates monthly transactions from Jan 2023 to Dec 2024 (24 months)
+    """
+    
+    # Configuration constants
+    REVENUE_MIN = 10000
+    REVENUE_MAX = 50000
+    EXPENSE_MIN = 2000
+    EXPENSE_MAX = 15000
     
     # Categories for revenue and expenses
     revenue_categories = ['Product Sales', 'Service Revenue', 'Consulting', 'Subscriptions']
@@ -52,7 +69,7 @@ def generate_financial_data():
     while current_date <= end_date:
         # Revenue transactions
         for category in revenue_categories:
-            amount = random.uniform(10000, 50000)
+            amount = random.uniform(REVENUE_MIN, REVENUE_MAX)
             data.append({
                 'date': current_date,
                 'category': category,
@@ -62,7 +79,7 @@ def generate_financial_data():
         
         # Expense transactions
         for category in expense_categories:
-            amount = random.uniform(2000, 15000)
+            amount = random.uniform(EXPENSE_MIN, EXPENSE_MAX)
             data.append({
                 'date': current_date,
                 'category': category,
@@ -211,8 +228,11 @@ display(df_yearly_summary)
 total_revenue = df_enriched.filter(col('type') == 'Revenue').agg(spark_sum('amount')).collect()[0][0]
 total_expenses = df_enriched.filter(col('type') == 'Expense').agg(spark_sum('amount')).collect()[0][0]
 net_profit = total_revenue - total_expenses
-avg_monthly_revenue = total_revenue / 24  # 24 months of data
-avg_monthly_expenses = total_expenses / 24
+
+# Calculate number of months dynamically from the data
+num_months = df_enriched.select('year', 'month').distinct().count()
+avg_monthly_revenue = total_revenue / num_months
+avg_monthly_expenses = total_expenses / num_months
 
 # Create KPI summary
 kpi_data = [
